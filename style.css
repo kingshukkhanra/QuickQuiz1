@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container1{
+    width: 90%;
+    background-color: #fff;
+    box-shadow: 0 0 50px 0 rgba(0,0,0,0.2);
+    min-height: 750px;
+    display: flex;
+    padding: 10px 12px;
+    border-radius: 15px;
+ }
+body{
+    font-family: 'Reggae One', 'cursive';
+    background-image: url(/img/bg.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+button{
+    background-color: #0099ff;
+    border-radius: 5px;
+    padding: 7px 14px;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    outline: none;
+}
+.container{
+   width: 940px;
+   background-color: #fff;
+   box-shadow: 0 0 50px 0 rgba(0,0,0,0.2);
+   min-height: 350px;
+   padding: 80px 90px;
+   border-radius: 15px;
+   display: flex;
+}
+.leftSide , .rightSide{
+   width: 50%;
+}
+.leftSide > h1{
+    height: 300px;
+    width: 300px;
+    color: #0099ff;
+    font-size: 68px;
+    padding-top: 40px;
+    font-weight: bold;
+}
+.rightSide h1{
+    color: #1da3dd;
+    font-size: 32px;
+}
+.rightSide >h2{
+    color: #444;
+    margin: 20px auto 10px;
+    font-size: 25px;
+}
+.rightSide1>h1 >h4{
+    color: #00ab00;
+} 
+.rightSide > ul{
+    color: #444;
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: 400;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+.rightSide ul li{
+    margin-top: 5px;
+}
+.rightSide > a{
+    background-color: #1da3dd;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 25px;
+    outline: none;
+    text-decoration: none;
+}
+/*  question page design */
+ .box{
+     background-color: #fff;
+     border-radius:15px;
+     box-shadow: 0 0 50px 0 rgba(0,0,0,0.2);
+     min-height: 380px;
+     width: 640px;
+     padding: 50px;
+ }
+ .title{
+     border-bottom: 1px solid #464646;
+     color: #0099ff;
+     padding-bottom: 10px;
+     margin-bottom: 25px;
+     font-weight: bold;
+     font-size: 25px;
+ }
+ .header{
+     margin-bottom: 30px;
+     display: flex;
+     justify-content: space-between;
+ }
+ .scoreBox,.timerBox{
+     border-radius: 45px;
+     padding: 10px 15px;
+     border: 1px solid #444;
+     color: #444;
+
+ }
+ .questionBox{
+     background-color: #594f76;
+     color: #fff;
+     border-radius: 5px;
+     padding: 10px 15 px;
+ }
+ .optionBox{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     margin: 20px 0;
+     grid-gap: 15px;
+ }
+ .optionBox span
+ {
+    background-color: #ccc;
+    border-radius: 10px;
+    color: #444;
+    border: 1px solid #444;
+    padding: 10px 15px ;
+    font-family: console;
+    font-weight: bold;
+ }
+ .optionBox span.right{
+    background-color: #00ab00;
+    border-color: #00ab00;
+    color: #fff;
+ }
+ .optionBox span.wrong{
+    background-color: #ab0600;
+    border-color: #ab0600;
+    color: #fff;
+}
+ .footer{
+     display: flex;
+     justify-content: space-between;
+ }
+ .footer > button{
+     background-color: #0099ff;
+     border-radius: 5px;
+     padding: 7px 14px;
+     border: 0;
+     outline: none;
+     font-size: 20px;
+
+ }
+/* ends here*/
+
+/*result page design */
+.resultBox{
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 15px;
+    font-size: 20px;
+}
+.resultBox *:nth-child(odd){
+   text-align: right;
+}
+.resultBox > span{
+   font-weight: 600;
+}
+.buttonBox{
+    border-top: 2px solid #444;
+    text-align: center;
+}
+.buttonBox a{
+    background-color: #0099ff;
+    color: #fff;
+    border-radius: 50px;
+    border: 0;
+    text-decoration: none;
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.success{
+    color: #00ab00;
+}
+.fail{
+    color: #ab0600;
+}
+/*Ends here*/
+
+
+
+/* Adding media query*/
+@media screen and (max-width :768px){
+    .leftSide {
+        display: none;
+    }
+    .rightSide{
+        width: 100%;
+    }
+    .container .box{
+        width: 425px;
+    }
+    .optionBox{
+        grid-template-columns: 1fr;
+    }
+
+}
+/*ends*/
+
+.leftSide1 > h1{
+    height: 300px;
+    width: 300px;
+    color: #0099ff;
+    font-size: 68px;
+    padding-top: 40px;
+    font-weight: bold;
+}
+.rightSide1 h1{
+    color: #1da3dd;
+    font-size: 32px;
+}
+.rightSide1 >h2{
+    color: #444;
+    margin: 20px auto 10px;
+    font-size: 25px;
+}
+.rightSide1 > ul{
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: 400;
+    list-style-type: none;
+    text-decoration: none;
+    list-style-position: inside;
+}
+.rightSide1 ul li{
+    margin-top: 10px;
+}
+.rightSide1 > button {
+    background-color: #0099ff;
+    border-radius: 5px;
+    padding: 7px 14px;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    display: flex;
+}
+.leftSide1{
+    width: 30%;
+    border-right: 2px solid #0099ff;
+    margin-right: 2px;
+ }
+ .rightSide1{
+    width: 68%;
+    padding-left: 15px;
+    margin-left: 15px;
+ }
+ .rightSide1 button > a{
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+ }
+.bttn{
+    background-color: #d85306;
+    border-radius: 5px;
+    padding: 7px 14px;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    display: flex;
+}
+.bttn > a{
+    text-decoration: none;
+    color: #fff;
+}
+
