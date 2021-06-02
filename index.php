@@ -115,7 +115,7 @@
 
                      echo "<script>
                      alert('Login sucessfull');
-                     window.location.href='content.php'
+                     window.location.href='QuickQuiz/content.php'
                           </script>";
 
                    }
